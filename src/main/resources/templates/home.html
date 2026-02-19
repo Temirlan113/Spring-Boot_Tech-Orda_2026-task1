@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/Bootstrap/css/bootstrap.min.css">
+    <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center fw-bold mb-5">Electronic shop items</h1>
+
+    <div class="row">
+        <div class="col-md-4 mb-4" th:each="it : ${items}">
+            <div class="p-4 rounded-3 text-center h-100" style="background-color: #d1e7dd;">
+                <h2 class="text-primary fw-bold mb-3" th:text="${it.name}">Mac Book Pro</h2>
+                <p class="small text-muted mb-4" th:text="${it.description}">Description</p>
+                <h3 class="fw-bold mb-4" style="color: #1a5928;" th:text="${it.price} + ' $'">0.00 $</h3>
+
+                <button class="btn btn-success w-100 py-2 fw-bold">DETAILS</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
