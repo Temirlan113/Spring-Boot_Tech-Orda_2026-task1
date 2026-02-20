@@ -12,19 +12,19 @@ import lombok.Setter;
 
 public class Item {
 
-    private static Long currentId=0L;
+    private static Long currentId = 0L;
     private Long id;
     private String name;
     private String description;
     private double price;
 
-public Item(){
-    currentId++;
-    id = currentId;
-}
+    public Item() {
+        currentId++;
+        id = currentId;
+    }
 
     public Item(String name, String description, double price) {
-    currentId++;
+        currentId++;
         this.id = currentId;
         this.name = name;
         this.description = description;

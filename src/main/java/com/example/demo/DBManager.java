@@ -18,7 +18,7 @@ public class DBManager {
 //        items.add(item);
 //    }
 
-    public static ArrayList<Item> getAllItems(){
+    public static ArrayList<Item> getAllItems() {
         return items;
     }
 }
